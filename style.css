@@ -1,8 +1,16 @@
 body{
     padding: 0;
     margin:0;
+    font-family: sans-serif;;
 
 }
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
 *{
     box-sizing:border-box;
 }
@@ -11,7 +19,34 @@ body{
     overflow: auto;
 
 }
+.btn{
+    color: black;
+    padding: 15px;
+    background-color: #fff;
+    font-weight: bold;
+    box-shadow: 10px 10px 15px black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+.btn:hover{
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    background-color: rgb(18, 46, 49);
+}
 
+.banner{
+    /*background-image: url('./banner_croped.jpg');*/
+    background-size: cover;
+    background-image: linear-gradient(to top,rgb(0, 0, 0, 0.5),rgb(4, 0, 0, 0.5)), url('./banner_croped.jpg');
+    color: #fff;
+}
+
+.banner-body{
+    padding: 10%;
+}
+/*attributes having col in its place*/
 [class*="col-"]{
     float:left;
     padding: 15px;
